@@ -1,0 +1,56 @@
+body{
+      background-color: #021321;
+}
+.block{
+	height: 50px;
+	width: 50px;
+	background-color: black;
+	position: relative;
+	transition: width 2s;
+	animation: a 4s linear infinite;
+
+}
+@keyframes a{
+	0%{left: 0px; top: 0px;}
+	25%{left: 1500px; top: 0px;}
+	50%{left: 1500px; top: 700px;}
+	75%{left:0px; top: 700px;}
+	100%{left: 0px; top: 0px;}
+}
+.black{
+	height: 100px;
+	width: 50px;
+	background-color: black;
+	position: relative;
+	transition: width 2s, height 4s,transform 2s;
+	animation: a 5s linear infinite;
+}
+.orange{
+	height: 100px;
+	width: 50px;
+	background-color: orange;
+	position: relative;
+	transition: width 2s, height 4s,transform 2s;
+	animation: a 6s linear infinite;
+}
+.violet{
+	height: 100px;
+	width: 50px;
+	background-color: violet;
+	position: relative;
+	transition: width 2s, height 4s,transform 2s;
+	animation: a 7s linear infinite;
+}
+.green{
+	height: 100px;
+	width: 50px;
+	background-color: green;
+	position: relative;
+	transition: width 2s, height 4s,transform 2s;
+	animation: a 8s linear infinite;
+}
+.black:hover,.violet:hover,.orange:hover,.green:hover {
+              
+              transform: scale(2,3);
+
+}
